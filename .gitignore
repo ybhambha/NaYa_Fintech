@@ -1,0 +1,6 @@
+*.db 
+*.sqbpro 
+*.lnk 
+__pycache__\ 
+.venv\ 
+*.pyc 
