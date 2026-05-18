@@ -39,8 +39,8 @@ from typing import Optional
 from semisector.models import AnalysisResult
 
 
-# Office 365 SMTP settings
-O365_HOST = "smtp.office365.com"
+# Gmail SMTP settings
+O365_HOST = "smtp.gmail.com"
 O365_PORT = 587
 
 
@@ -94,12 +94,20 @@ class EmailReporter:
 
         try:
             context = ssl.create_default_context()
-            with smtplib.SMTP(self.smtp_host, self.smtp_port) as server:
-                server.ehlo()
-                server.starttls(context=context)
-                server.ehlo()
-                server.login(self.from_addr, self.password)
-                server.sendmail(self.from_addr, self.to_addrs, msg.as_string())
+            # Try SMTP_SSL (port 465) first — works for Hotmail/personal Microsoft accounts
+            try:
+                with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
+                    server.ehlo()
+                    server.login(self.from_addr, self.password)
+                    server.sendmail(self.from_addr, self.to_addrs, msg.as_string())
+            except Exception:
+                # Fallback: STARTTLS (port 587) — works for Office 365 corporate accounts
+                with smtplib.SMTP("smtp.gmail.com", 587) as server:
+                    server.ehlo()
+                    server.starttls(context=context)
+                    server.ehlo()
+                    server.login(self.from_addr, self.password)
+                    server.sendmail(self.from_addr, self.to_addrs, msg.as_string())
             print(f"  ✅ Email sent to {', '.join(self.to_addrs)}")
             return True
         except smtplib.SMTPAuthenticationError:
@@ -239,16 +247,16 @@ class EmailReporter:
 <div class="container">
 
   <!-- HEADER -->
-  <div class="header">
-    <h1>🔬 Semiconductor Sector Intelligence Report</h1>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1e293b;"><tr><td style="padding:32px 40px;"><p style="margin:0 0 4px;font-size:11px;color:rgba(255,255,255,0.55);font-family:Arial,sans-serif;">NaYa Fintech | Technofunctional Consulting | CFA, FRM Expertise</p><h1 style="margin:8px 0 6px;font-size:24px;font-weight:700;color:#ffffff;font-family:Arial,sans-serif;">Semiconductor Sector Intelligence Report</h1><p style="margin:0 0 16px;font-size:13px;color:rgba(255,255,255,0.7);font-family:Arial,sans-serif;">Daily Market Analysis - AI-Assisted Research</p></td></tr></table><div style="display:none">
+    <h1>Semiconductor Sector Intelligence Report</h1>
     <p>NaYa Fintech | Technofunctional Consulting | Financial Services Solutions</p>
-    <div class="badge">📅 {datetime.today():%B %d, %Y  %I:%M %p}</div>
-    <div class="badge">🤖 Powered by Claude AI</div>
+    <div class="badge"> {datetime.today():%B %d, %Y  %I:%M %p}</div>
+    <div class="badge"> Powered by Claude AI</div>
   </div>
 
   <!-- SECTION 1: EXECUTIVE SUMMARY -->
   <div class="section">
-    <div class="section-title">📊 Executive Summary</div>
+    <div class="section-title">Executive Summary</div>
 
     <div class="verdict-box">
       <h3>{verdict_text}</h3>
@@ -281,7 +289,7 @@ class EmailReporter:
 
   <!-- SECTION 2: RANKED TABLE -->
   <div class="section">
-    <div class="section-title">📈 Ranked Opportunity Table</div>
+    <div class="section-title">Ranked Opportunity Table</div>
     <table>
       <thead>
         <tr>
@@ -298,7 +306,7 @@ class EmailReporter:
 
   <!-- SECTION 3: DETAILED ANALYSIS -->
   <div class="section">
-    <div class="section-title">🔍 Detailed Ticker Analysis</div>
+    <div class="section-title">Detailed Ticker Analysis</div>
     {self._detail_cards(sorted_r)}
   </div>
 
@@ -492,7 +500,7 @@ class EmailReporter:
 
         return f"""
   <div class="section">
-    <div class="section-title">📉 Backtest Results</div>
+    <div class="section-title">Backtest Results</div>
     <div class="verdict-box" style="border-color:{verdict_color};
          background:{verdict_color}15;">
       <h3 style="color:{verdict_color};">
@@ -544,7 +552,7 @@ class EmailReporter:
 
         return f"""
   <div class="section">
-    <div class="section-title">🧠 Weight Optimization Results</div>
+    <div class="section-title">Weight Optimization Results</div>
     <p style="font-size:13px;color:#475569;margin:0 0 16px;">
       Both Ridge Regression and Random Forest were trained on historical
       indicator data using walk-forward cross-validation.
