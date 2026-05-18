@@ -42,13 +42,15 @@ class Analyzer:
         period:       str,
         budget:       float,
         show_options: bool,
-        db_path:      Optional[str] = DEFAULT_DB_PATH,
+        db_path:      Optional[str]  = DEFAULT_DB_PATH,
+        weights:      Optional[dict] = None,
     ) -> None:
         self.tickers      = tickers
         self.period       = period
         self.budget       = budget
         self.show_options = show_options
-        self.db_path      = db_path        # None = database disabled
+        self.db_path      = db_path
+        self.weights      = weights    # None = default scoring weights
         self.reporter     = Reporter()
 
     # ── Public entry point ────────────────────────────────────────────────────

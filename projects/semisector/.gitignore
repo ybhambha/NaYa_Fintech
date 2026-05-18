@@ -29,9 +29,18 @@ htmlcov/
 # macOS
 .DS_Store
 
+# Credentials — NEVER commit this
+.env
+
 # Data directory contents (keep folder, ignore files)
 data/*
 !data/.gitkeep
+
+# Reports (HTML previews — optional: remove this line to push reports to GitHub)
+# reports/
+
+# Logs
+logs/
 
 # Docs build
 docs/_build/
