@@ -37,7 +37,8 @@ data/*
 !data/.gitkeep
 
 # Reports (HTML previews — optional: remove this line to push reports to GitHub)
-# reports/
+!reports/
+!reports/*.html
 
 # Logs
 logs/
