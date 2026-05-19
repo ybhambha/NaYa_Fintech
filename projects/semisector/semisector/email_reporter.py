@@ -39,7 +39,7 @@ from typing import Optional
 from semisector.models import AnalysisResult
 
 
-# Gmail SMTP settings
+# Office 365 SMTP settings
 O365_HOST = "smtp.gmail.com"
 O365_PORT = 587
 
@@ -246,13 +246,48 @@ class EmailReporter:
 <body>
 <div class="container">
 
-  <!-- HEADER -->
-  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1e293b;"><tr><td style="padding:32px 40px;"><p style="margin:0 0 4px;font-size:11px;color:rgba(255,255,255,0.55);font-family:Arial,sans-serif;">NaYa Fintech | Technofunctional Consulting | CFA, FRM Expertise</p><h1 style="margin:8px 0 6px;font-size:24px;font-weight:700;color:#ffffff;font-family:Arial,sans-serif;">Semiconductor Sector Intelligence Report</h1><p style="margin:0 0 16px;font-size:13px;color:rgba(255,255,255,0.7);font-family:Arial,sans-serif;">Daily Market Analysis - AI-Assisted Research</p></td></tr></table><div style="display:none">
-    <h1>Semiconductor Sector Intelligence Report</h1>
-    <p>NaYa Fintech | Technofunctional Consulting | Financial Services Solutions</p>
-    <div class="badge"> {datetime.today():%B %d, %Y  %I:%M %p}</div>
-    <div class="badge"> Powered by Claude AI</div>
-  </div>
+  <!-- HEADER — table-based for maximum email client compatibility -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0"
+         style="background:#1e293b;">
+    <tr>
+      <td style="padding:32px 40px;">
+        <p style="margin:0 0 4px;font-size:11px;text-transform:uppercase;
+                  letter-spacing:0.12em;color:rgba(255,255,255,0.55);font-family:Arial,sans-serif;">
+          NaYa Fintech &nbsp;&#124;&nbsp; Technofunctional Consulting &nbsp;&#124;&nbsp;
+          Financial Services Solutions &nbsp;&#124;&nbsp; CFA, FRM Expertise
+        </p>
+        <h1 style="margin:8px 0 4px;font-size:24px;font-weight:700;color:#ffffff;
+                   font-family:Arial,sans-serif;letter-spacing:-0.3px;">
+          Semiconductor Sector Intelligence Report
+        </h1>
+        <p style="margin:0 0 16px;font-size:13px;color:rgba(255,255,255,0.7);
+                  font-family:Arial,sans-serif;">
+          Daily Market Analysis &mdash; AI-Assisted Research
+        </p>
+        <table cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td style="background:rgba(255,255,255,0.15);border-radius:20px;
+                       padding:6px 16px;font-size:13px;font-weight:700;
+                       color:#ffffff;font-family:Arial,sans-serif;">
+              Report Date: {datetime.today():%B %d, %Y}
+            </td>
+            <td width="12"></td>
+            <td style="background:rgba(255,255,255,0.15);border-radius:20px;
+                       padding:6px 16px;font-size:12px;
+                       color:#ffffff;font-family:Arial,sans-serif;">
+              Generated at {datetime.today():%I:%M %p}
+            </td>
+            <td width="12"></td>
+            <td style="background:rgba(255,255,255,0.15);border-radius:20px;
+                       padding:6px 16px;font-size:12px;
+                       color:#ffffff;font-family:Arial,sans-serif;">
+              Powered by Claude AI
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
 
   <!-- SECTION 1: EXECUTIVE SUMMARY -->
   <div class="section">
