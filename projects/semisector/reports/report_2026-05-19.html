@@ -1,0 +1,1304 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NaYa Fintech Semiconductor Report</title>
+<style>
+  body { font-family: 'Segoe UI', Arial, sans-serif; background:#f8fafc;
+          color:#1e293b; margin:0; padding:20px; }
+  .container { max-width:900px; margin:0 auto; background:#fff;
+                border-radius:12px; box-shadow:0 4px 24px rgba(0,0,0,0.08); overflow:hidden; }
+  .header { background:linear-gradient(135deg,#1e293b 0%,#334155 100%);
+             color:#fff; padding:32px 40px; }
+  .header h1 { margin:0 0 4px; font-size:24px; font-weight:700; }
+  .header p  { margin:0; opacity:0.75; font-size:14px; }
+  .badge { display:inline-block; background:rgba(255,255,255,0.15);
+            border-radius:20px; padding:4px 12px; font-size:12px;
+            margin-top:10px; }
+  .section { padding:28px 40px; border-bottom:1px solid #f1f5f9; }
+  .section:last-child { border-bottom:none; }
+  .section-title { font-size:16px; font-weight:700; color:#334155;
+                    margin:0 0 16px; text-transform:uppercase;
+                    letter-spacing:0.05em; }
+  .verdict-box { background:#d9770615; border-left:4px solid #d97706;
+                  border-radius:8px; padding:16px 20px; margin-bottom:16px; }
+  .verdict-box h3 { margin:0 0 4px; color:#d97706; font-size:15px; }
+  .verdict-box p  { margin:0; color:#475569; font-size:13px; }
+  .stat-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px;
+                margin-bottom:16px; }
+  .stat-card { background:#f8fafc; border-radius:8px; padding:14px 16px;
+                text-align:center; border:1px solid #e2e8f0; }
+  .stat-card .val { font-size:22px; font-weight:700; color:#1e293b; }
+  .stat-card .lbl { font-size:11px; color:#94a3b8; text-transform:uppercase;
+                     letter-spacing:0.05em; margin-top:2px; }
+  table { width:100%; border-collapse:collapse; font-size:13px; }
+  th { background:#f1f5f9; color:#64748b; font-weight:600; padding:10px 12px;
+        text-align:left; font-size:11px; text-transform:uppercase;
+        letter-spacing:0.05em; }
+  td { padding:10px 12px; border-bottom:1px solid #f1f5f9; }
+  tr:last-child td { border-bottom:none; }
+  tr:hover td { background:#f8fafc; }
+  .score-high  { color:#16a34a; font-weight:700; }
+  .score-med   { color:#d97706; font-weight:700; }
+  .score-low   { color:#dc2626; font-weight:700; }
+  .ret-pos     { color:#16a34a; }
+  .ret-neg     { color:#dc2626; }
+  .ticker-card { background:#f8fafc; border-radius:10px; padding:20px;
+                  margin-bottom:16px; border:1px solid #e2e8f0; }
+  .ticker-card h3 { margin:0 0 12px; font-size:15px; color:#1e293b; }
+  .ticker-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+  .ticker-item { font-size:12px; }
+  .ticker-item .lbl { color:#94a3b8; }
+  .ticker-item .val { color:#1e293b; font-weight:600; }
+  .strategy-box { background:#eff6ff; border-radius:6px; padding:10px 14px;
+                   margin-top:10px; border-left:3px solid #3b82f6; }
+  .strategy-box .strat-name { font-weight:700; color:#1d4ed8; font-size:13px; }
+  .strategy-box .strat-action { font-size:12px; color:#374151; margin-top:4px; }
+  .strategy-box .strat-tips { font-size:11px; color:#6b7280; margin-top:6px;
+                                padding-left:14px; }
+  .chip { display:inline-block; padding:2px 8px; border-radius:10px;
+           font-size:11px; font-weight:600; }
+  .chip-green  { background:#dcfce7; color:#16a34a; }
+  .chip-yellow { background:#fef9c3; color:#ca8a04; }
+  .chip-red    { background:#fee2e2; color:#dc2626; }
+  .model-box { background:#f0fdf4; border-radius:8px; padding:14px 16px;
+                margin-bottom:10px; border:1px solid #bbf7d0; }
+  .model-box.winner { border-color:#16a34a; background:#dcfce7; }
+  .footer { background:#f8fafc; padding:20px 40px; text-align:center;
+             font-size:11px; color:#94a3b8; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- HEADER -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1e293b;"><tr><td style="padding:32px 40px;"><p style="margin:0 0 4px;font-size:11px;color:rgba(255,255,255,0.55);font-family:Arial,sans-serif;">NaYa Fintech | Technofunctional Consulting | CFA, FRM Expertise</p><h1 style="margin:8px 0 6px;font-size:24px;font-weight:700;color:#ffffff;font-family:Arial,sans-serif;">Semiconductor Sector Intelligence Report</h1><p style="margin:0 0 16px;font-size:13px;color:rgba(255,255,255,0.7);font-family:Arial,sans-serif;">Daily Market Analysis - AI-Assisted Research</p></td></tr></table><div style="display:none">
+    <h1>Semiconductor Sector Intelligence Report</h1>
+    <p>NaYa Fintech | Technofunctional Consulting | Financial Services Solutions</p>
+    <div class="badge"> May 19, 2026  05:30 PM</div>
+    <div class="badge"> Powered by Claude AI</div>
+  </div>
+
+  <!-- SECTION 1: EXECUTIVE SUMMARY -->
+  <div class="section">
+    <div class="section-title">Executive Summary</div>
+
+    <div class="verdict-box">
+      <h3>⚡ MIXED PICTURE — Selective opportunity remains</h3>
+      <p>Sector has run hard. Use DCA or limit orders rather than lump-sum.</p>
+    </div>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="val">65/100</div>
+        <div class="lbl">Avg Opportunity Score</div>
+      </div>
+      <div class="stat-card">
+        <div class="val">4/12</div>
+        <div class="lbl">High-Opportunity Tickers</div>
+      </div>
+      <div class="stat-card">
+        <div class="val">1</div>
+        <div class="lbl">Potentially Overbought</div>
+      </div>
+    </div>
+
+    <p style="font-size:13px;color:#475569;margin:0;">
+      <strong>Top picks today:</strong>
+      <strong>AVGO</strong> (75), <strong>NVDA</strong> (73), <strong>MU</strong> (73)
+      &nbsp;|&nbsp;
+      <strong>Overbought (caution):</strong>
+      TXN
+    </p>
+  </div>
+
+  <!-- SECTION 2: RANKED TABLE -->
+  <div class="section">
+    <div class="section-title">Ranked Opportunity Table</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Rank</th><th>Ticker</th><th>Price</th><th>Score</th>
+          <th>RSI</th><th>ADX</th><th>1M Return</th><th>3M Return</th>
+          <th>vs SPY</th><th>Trend</th><th>Top Strategy</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td style="font-weight:600;color:#94a3b8;">1</td>
+          <td style="font-weight:700;">AVGO</td>
+          <td>$411.07</td>
+          <td class="score-high">75</td>
+          <td>52.2</td>
+          <td>24.7</td>
+          <td><span class='ret-pos'>+2.9%</span></td>
+          <td><span class='ret-pos'>+23.5%</span></td>
+          <td><span class='ret-pos'>+16.0%</span></td>
+          <td style="font-size:11px;">Strong Uptrend ▲▲</td>
+          <td style="font-size:11px;">Full Buy — Lump-Sum</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;color:#94a3b8;">2</td>
+          <td style="font-weight:700;">NVDA</td>
+          <td>$220.61</td>
+          <td class="score-high">73</td>
+          <td>59.9</td>
+          <td>30.6</td>
+          <td><span class='ret-pos'>+9.2%</span></td>
+          <td><span class='ret-pos'>+17.4%</span></td>
+          <td><span class='ret-pos'>+9.9%</span></td>
+          <td style="font-size:11px;">Strong Uptrend ▲▲</td>
+          <td style="font-size:11px;">Full Buy — Lump-Sum</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;color:#94a3b8;">3</td>
+          <td style="font-weight:700;">MU</td>
+          <td>$698.74</td>
+          <td class="score-high">73</td>
+          <td>61.3</td>
+          <td>38.1</td>
+          <td><span class='ret-pos'>+55.8%</span></td>
+          <td><span class='ret-pos'>+66.1%</span></td>
+          <td><span class='ret-pos'>+58.6%</span></td>
+          <td style="font-size:11px;">Strong Uptrend ▲▲</td>
+          <td style="font-size:11px;">Full Buy — Lump-Sum</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;color:#94a3b8;">4</td>
+          <td style="font-weight:700;">AMAT</td>
+          <td>$406.91</td>
+          <td class="score-high">71</td>
+          <td>49.8</td>
+          <td>16.8</td>
+          <td><span class='ret-pos'>+3.9%</span></td>
+          <td><span class='ret-pos'>+10.3%</span></td>
+          <td><span class='ret-pos'>+2.8%</span></td>
+          <td style="font-size:11px;">Strong Uptrend ▲▲</td>
+          <td style="font-size:11px;">Dollar-Cost Averaging (Bi-Weekly, 10 per</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;color:#94a3b8;">5</td>
+          <td style="font-weight:700;">LRCX</td>
+          <td>$273.38</td>
+          <td class="score-med">65</td>
+          <td>51.2</td>
+          <td>17.2</td>
+          <td><span class='ret-pos'>+3.9%</span></td>
+          <td><span class='ret-pos'>+14.0%</span></td>
+          <td><span class='ret-pos'>+6.5%</span></td>
+          <td style="font-size:11px;">Strong Uptrend ▲▲</td>
+          <td style="font-size:11px;">Dollar-Cost Averaging (Bi-Weekly, 10 per</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;color:#94a3b8;">6</td>
+          <td style="font-weight:700;">ON</td>
+          <td>$106.02</td>
+          <td class="score-med">65</td>
+          <td>59.5</td>
+          <td>41.0</td>
+          <td><span class='ret-pos'>+23.9%</span></td>
+          <td><span class='ret-pos'>+50.0%</span></td>
+          <td><span class='ret-pos'>+42.6%</span></td>
+          <td style="font-size:11px;">Strong Uptrend ▲▲</td>
+          <td style="font-size:11px;">Dollar-Cost Averaging (Weekly, 8 periods</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;color:#94a3b8;">7</td>
+          <td style="font-weight:700;">SOXX</td>
+          <td>$496.74</td>
+          <td class="score-med">65</td>
+          <td>60.2</td>
+          <td>40.3</td>
+          <td><span class='ret-pos'>+19.0%</span></td>
+          <td><span class='ret-pos'>+38.9%</span></td>
+          <td><span class='ret-pos'>+31.4%</span></td>
+          <td style="font-size:11px;">Strong Uptrend ▲▲</td>
+          <td style="font-size:11px;">Dollar-Cost Averaging (Weekly, 8 periods</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;color:#94a3b8;">8</td>
+          <td style="font-weight:700;">AMD</td>
+          <td>$414.05</td>
+          <td class="score-med">64</td>
+          <td>63.8</td>
+          <td>49.8</td>
+          <td><span class='ret-pos'>+50.6%</span></td>
+          <td><span class='ret-pos'>+106.9%</span></td>
+          <td><span class='ret-pos'>+99.4%</span></td>
+          <td style="font-size:11px;">Strong Uptrend ▲▲</td>
+          <td style="font-size:11px;">Dollar-Cost Averaging (Weekly, 8 periods</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;color:#94a3b8;">9</td>
+          <td style="font-weight:700;">SMH</td>
+          <td>$543.96</td>
+          <td class="score-med">64</td>
+          <td>60.9</td>
+          <td>37.4</td>
+          <td><span class='ret-pos'>+17.2%</span></td>
+          <td><span class='ret-pos'>+31.9%</span></td>
+          <td><span class='ret-pos'>+24.4%</span></td>
+          <td style="font-size:11px;">Strong Uptrend ▲▲</td>
+          <td style="font-size:11px;">Dollar-Cost Averaging (Weekly, 8 periods</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;color:#94a3b8;">10</td>
+          <td style="font-weight:700;">MRVL</td>
+          <td>$176.27</td>
+          <td class="score-med">60</td>
+          <td>62.9</td>
+          <td>45.4</td>
+          <td><span class='ret-pos'>+19.2%</span></td>
+          <td><span class='ret-pos'>+123.0%</span></td>
+          <td><span class='ret-pos'>+115.5%</span></td>
+          <td style="font-size:11px;">Strong Uptrend ▲▲</td>
+          <td style="font-size:11px;">Dollar-Cost Averaging (Weekly, 8 periods</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;color:#94a3b8;">11</td>
+          <td style="font-weight:700;">QCOM</td>
+          <td>$195.61</td>
+          <td class="score-med">59</td>
+          <td>58.4</td>
+          <td>41.6</td>
+          <td><span class='ret-pos'>+42.2%</span></td>
+          <td><span class='ret-pos'>+37.4%</span></td>
+          <td><span class='ret-pos'>+29.9%</span></td>
+          <td style="font-size:11px;">Uptrend ▲</td>
+          <td style="font-size:11px;">Dollar-Cost Averaging (Weekly, 8 periods</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600;color:#94a3b8;">12</td>
+          <td style="font-weight:700;">TXN</td>
+          <td>$302.31</td>
+          <td class="score-low">44</td>
+          <td>73.3</td>
+          <td>56.8</td>
+          <td><span class='ret-pos'>+30.0%</span></td>
+          <td><span class='ret-pos'>+36.1%</span></td>
+          <td><span class='ret-pos'>+28.6%</span></td>
+          <td style="font-size:11px;">Strong Uptrend ▲▲</td>
+          <td style="font-size:11px;">Pullback Buy — GTC Limit Order</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- SECTION 3: DETAILED ANALYSIS -->
+  <div class="section">
+    <div class="section-title">Detailed Ticker Analysis</div>
+    
+      <div class="ticker-card">
+        <h3>AVGO — Broadcom Inc. &nbsp; <span class='chip chip-green'>75</span></h3>
+        <div class="ticker-grid">
+          <div class="ticker-item">
+            <span class="lbl">Price: </span>
+            <span class="val">$411.07</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Trend: </span>
+            <span class="val">Strong Uptrend ▲▲</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">RSI: </span>
+            <span class="val">52.2
+              ✓
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">ADX: </span>
+            <span class="val">24.7
+              (Weak)
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">MACD: </span>
+            <span class="val">-3.6917
+              ↓
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">BB%: </span>
+            <span class="val">24%</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Fwd P/E: </span>
+            <span class="val">22.5x</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">PEG: </span>
+            <span class="val">0.92x</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Market Cap: </span>
+            <span class="val">$1946B</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Analyst Target: </span>
+            <span class="val">$477.13 (+16%)</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">1M / 3M Return: </span>
+            <span class="val">
+              <span class='ret-pos'>+2.9%</span> / <span class='ret-pos'>+23.5%</span>
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Max Drawdown: </span>
+            <span class="val">-28.7%</span>
+          </div>
+        </div>
+        <div style="margin-top:12px;font-size:12px;color:#64748b;">
+          <strong>Score breakdown:</strong>
+          RSI: 25 | BB: 15 | SMA50: 20 | MACD: 0 | ADX: 5 | GoldenX: 5 | Stoch: 5
+        </div>
+        
+              <div class="strategy-box">
+                <div class="strat-name">🟢 Full Buy — Lump-Sum</div>
+                <div class="strat-action"><strong>Action:</strong> Buy 24 shares of AVGO at market (≈$411.07). Stop-loss at $387.82.</div>
+                <div class="strat-action" style="margin-top:4px;">
+                  <strong>Why:</strong> Score 75/100, RSI 52 (not overbought), ADX 25 (strong trend). Risk/reward ≈ 0.2×. Golden cross in place.
+                </div>
+                <ul class="strat-tips"><li>Use a limit order at or just below $411.89 to avoid gap-up fills.</li><li>Hard stop-loss at $387.82 (1.5× ATR = 5.7% below entry).</li><li>First profit-take at $433.72 (+5.5% — 60-day resistance).</li></ul>
+              </div>
+              <div class="strategy-box">
+                <div class="strat-name">📅 Dollar-Cost Averaging (Bi-Weekly, 10 periods)</div>
+                <div class="strat-action"><strong>Action:</strong> Invest $2,000 in AVGO every bi-weekly for 10 periods. Total: $10,000.</div>
+                <div class="strat-action" style="margin-top:4px;">
+                  <strong>Why:</strong> Sector up +24% in 3 months — timing risk is real. DCA removes the 'did I buy the top?' problem by spreading purchases across time and averaging your cost basis.
+                </div>
+                <ul class="strat-tips"><li>Set a recurring calendar reminder — discipline beats market-timing.</li><li>Track your average cost basis after each tranche.</li><li>Pause if price falls below $347.10 (200-SMA) and re-assess.</li></ul>
+              </div>
+      </div>
+      <div class="ticker-card">
+        <h3>NVDA — NVIDIA Corporation &nbsp; <span class='chip chip-green'>73</span></h3>
+        <div class="ticker-grid">
+          <div class="ticker-item">
+            <span class="lbl">Price: </span>
+            <span class="val">$220.61</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Trend: </span>
+            <span class="val">Strong Uptrend ▲▲</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">RSI: </span>
+            <span class="val">59.9
+              ✓
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">ADX: </span>
+            <span class="val">30.6
+              (Strong)
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">MACD: </span>
+            <span class="val">+0.6421
+              ↑
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">BB%: </span>
+            <span class="val">69%</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Fwd P/E: </span>
+            <span class="val">19.0x</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">PEG: </span>
+            <span class="val">0.71x</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Market Cap: </span>
+            <span class="val">$5343B</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Analyst Target: </span>
+            <span class="val">$275.31 (+25%)</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">1M / 3M Return: </span>
+            <span class="val">
+              <span class='ret-pos'>+9.2%</span> / <span class='ret-pos'>+17.4%</span>
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Max Drawdown: </span>
+            <span class="val">-20.2%</span>
+          </div>
+        </div>
+        <div style="margin-top:12px;font-size:12px;color:#64748b;">
+          <strong>Score breakdown:</strong>
+          RSI: 12 | BB: 6 | SMA50: 20 | MACD: 15 | ADX: 15 | GoldenX: 5
+        </div>
+        
+              <div class="strategy-box">
+                <div class="strat-name">🟢 Full Buy — Lump-Sum</div>
+                <div class="strat-action"><strong>Action:</strong> Buy 45 shares of NVDA at market (≈$220.61). Stop-loss at $209.05.</div>
+                <div class="strat-action" style="margin-top:4px;">
+                  <strong>Why:</strong> Score 73/100, RSI 60 (not overbought), ADX 31 (strong trend). Risk/reward ≈ 0.1×. Golden cross in place.
+                </div>
+                <ul class="strat-tips"><li>Use a limit order at or just below $221.05 to avoid gap-up fills.</li><li>Hard stop-loss at $209.05 (1.5× ATR = 5.2% below entry).</li><li>First profit-take at $227.95 (+3.3% — 60-day resistance).</li></ul>
+              </div>
+              <div class="strategy-box">
+                <div class="strat-name">📅 Dollar-Cost Averaging (Bi-Weekly, 10 periods)</div>
+                <div class="strat-action"><strong>Action:</strong> Invest $2,000 in NVDA every bi-weekly for 10 periods. Total: $10,000.</div>
+                <div class="strat-action" style="margin-top:4px;">
+                  <strong>Why:</strong> Sector up +17% in 3 months — timing risk is real. DCA removes the 'did I buy the top?' problem by spreading purchases across time and averaging your cost basis.
+                </div>
+                <ul class="strat-tips"><li>Set a recurring calendar reminder — discipline beats market-timing.</li><li>Track your average cost basis after each tranche.</li><li>Pause if price falls below $186.42 (200-SMA) and re-assess.</li></ul>
+              </div>
+      </div>
+      <div class="ticker-card">
+        <h3>MU — Micron Technology, Inc. &nbsp; <span class='chip chip-green'>73</span></h3>
+        <div class="ticker-grid">
+          <div class="ticker-item">
+            <span class="lbl">Price: </span>
+            <span class="val">$698.74</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Trend: </span>
+            <span class="val">Strong Uptrend ▲▲</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">RSI: </span>
+            <span class="val">61.3
+              ✓
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">ADX: </span>
+            <span class="val">38.1
+              (Strong)
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">MACD: </span>
+            <span class="val">+0.3940
+              ↑
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">BB%: </span>
+            <span class="val">65%</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Fwd P/E: </span>
+            <span class="val">6.8x</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">PEG: </span>
+            <span class="val">0.23x</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Market Cap: </span>
+            <span class="val">$788B</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Analyst Target: </span>
+            <span class="val">$612.66 (-12%)</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">1M / 3M Return: </span>
+            <span class="val">
+              <span class='ret-pos'>+55.8%</span> / <span class='ret-pos'>+66.1%</span>
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Max Drawdown: </span>
+            <span class="val">-30.3%</span>
+          </div>
+        </div>
+        <div style="margin-top:12px;font-size:12px;color:#64748b;">
+          <strong>Score breakdown:</strong>
+          RSI: 12 | BB: 6 | SMA50: 20 | MACD: 15 | ADX: 15 | GoldenX: 5
+        </div>
+        
+              <div class="strategy-box">
+                <div class="strat-name">🟢 Full Buy — Lump-Sum</div>
+                <div class="strat-action"><strong>Action:</strong> Buy 14 shares of MU at market (≈$698.74). Stop-loss at $622.69.</div>
+                <div class="strat-action" style="margin-top:4px;">
+                  <strong>Why:</strong> Score 73/100, RSI 61 (not overbought), ADX 38 (strong trend). Risk/reward ≈ 0.1×. Golden cross in place.
+                </div>
+                <ul class="strat-tips"><li>Use a limit order at or just below $700.14 to avoid gap-up fills.</li><li>Hard stop-loss at $622.69 (1.5× ATR = 10.9% below entry).</li><li>First profit-take at $784.22 (+12.2% — 60-day resistance).</li></ul>
+              </div>
+              <div class="strategy-box">
+                <div class="strat-name">📅 Dollar-Cost Averaging (Weekly, 8 periods)</div>
+                <div class="strat-action"><strong>Action:</strong> Invest $1,250 in MU every weekly for 8 periods. Total: $10,000.</div>
+                <div class="strat-action" style="margin-top:4px;">
+                  <strong>Why:</strong> Sector up +66% in 3 months — timing risk is real. DCA removes the 'did I buy the top?' problem by spreading purchases across time and averaging your cost basis.
+                </div>
+                <ul class="strat-tips"><li>Set a recurring calendar reminder — discipline beats market-timing.</li><li>Track your average cost basis after each tranche.</li><li>Pause if price falls below $312.81 (200-SMA) and re-assess.</li></ul>
+              </div>
+      </div>
+      <div class="ticker-card">
+        <h3>AMAT — Applied Materials, Inc. &nbsp; <span class='chip chip-green'>71</span></h3>
+        <div class="ticker-grid">
+          <div class="ticker-item">
+            <span class="lbl">Price: </span>
+            <span class="val">$406.91</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Trend: </span>
+            <span class="val">Strong Uptrend ▲▲</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">RSI: </span>
+            <span class="val">49.8
+              ✓
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">ADX: </span>
+            <span class="val">16.8
+              (Weak)
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">MACD: </span>
+            <span class="val">-1.8177
+              ↓
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">BB%: </span>
+            <span class="val">42%</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Fwd P/E: </span>
+            <span class="val">25.3x</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">PEG: </span>
+            <span class="val">1.40x</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Market Cap: </span>
+            <span class="val">$323B</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Analyst Target: </span>
+            <span class="val">$508.63 (+25%)</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">1M / 3M Return: </span>
+            <span class="val">
+              <span class='ret-pos'>+3.9%</span> / <span class='ret-pos'>+10.3%</span>
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Max Drawdown: </span>
+            <span class="val">-21.4%</span>
+          </div>
+        </div>
+        <div style="margin-top:12px;font-size:12px;color:#64748b;">
+          <strong>Score breakdown:</strong>
+          RSI: 30 | BB: 11 | SMA50: 20 | MACD: 0 | ADX: 0 | GoldenX: 5 | Stoch: 5
+        </div>
+        
+              <div class="strategy-box">
+                <div class="strat-name">📅 Dollar-Cost Averaging (Bi-Weekly, 10 periods)</div>
+                <div class="strat-action"><strong>Action:</strong> Invest $2,000 in AMAT every bi-weekly for 10 periods. Total: $10,000.</div>
+                <div class="strat-action" style="margin-top:4px;">
+                  <strong>Why:</strong> Sector up +10% in 3 months — timing risk is real. DCA removes the 'did I buy the top?' problem by spreading purchases across time and averaging your cost basis.
+                </div>
+                <ul class="strat-tips"><li>Set a recurring calendar reminder — discipline beats market-timing.</li><li>Track your average cost basis after each tranche.</li><li>Pause if price falls below $283.13 (200-SMA) and re-assess.</li></ul>
+              </div>
+              <div class="strategy-box">
+                <div class="strat-name">🔀 ETF Rotation — Swap AMAT Risk for SOXX</div>
+                <div class="strat-action"><strong>Action:</strong> Instead of (or alongside) single-stock AMAT, buy $10,000 of SOXX via lump-sum or DCA.</div>
+                <div class="strat-action" style="margin-top:4px;">
+                  <strong>Why:</strong> Reduces single-name concentration risk while maintaining full sector exposure. SOXX holds 25-30 semiconductor names — one earnings miss won't crater the position.
+                </div>
+                <ul class="strat-tips"><li>SMH: more NVDA-heavy (higher AI beta). SOXX: more balanced (10% cap).</li><li>SOXL is 3× leveraged — only for very short-term tactical traders.</li><li>ETFs work well as DCA vehicles with automatic investment plans.</li></ul>
+              </div>
+      </div>
+      <div class="ticker-card">
+        <h3>LRCX — Lam Research Corporation &nbsp; <span class='chip chip-yellow'>65</span></h3>
+        <div class="ticker-grid">
+          <div class="ticker-item">
+            <span class="lbl">Price: </span>
+            <span class="val">$273.38</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Trend: </span>
+            <span class="val">Strong Uptrend ▲▲</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">RSI: </span>
+            <span class="val">51.2
+              ✓
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">ADX: </span>
+            <span class="val">17.2
+              (Weak)
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">MACD: </span>
+            <span class="val">-1.5741
+              ↓
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">BB%: </span>
+            <span class="val">48%</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Fwd P/E: </span>
+            <span class="val">34.5x</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">PEG: </span>
+            <span class="val">1.63x</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Market Cap: </span>
+            <span class="val">$342B</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Analyst Target: </span>
+            <span class="val">$311.66 (+14%)</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">1M / 3M Return: </span>
+            <span class="val">
+              <span class='ret-pos'>+3.9%</span> / <span class='ret-pos'>+14.0%</span>
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Max Drawdown: </span>
+            <span class="val">-20.0%</span>
+          </div>
+        </div>
+        <div style="margin-top:12px;font-size:12px;color:#64748b;">
+          <strong>Score breakdown:</strong>
+          RSI: 25 | BB: 10 | SMA50: 20 | MACD: 0 | ADX: 0 | GoldenX: 5 | Stoch: 5
+        </div>
+        
+              <div class="strategy-box">
+                <div class="strat-name">📅 Dollar-Cost Averaging (Bi-Weekly, 10 periods)</div>
+                <div class="strat-action"><strong>Action:</strong> Invest $2,000 in LRCX every bi-weekly for 10 periods. Total: $10,000.</div>
+                <div class="strat-action" style="margin-top:4px;">
+                  <strong>Why:</strong> Sector up +14% in 3 months — timing risk is real. DCA removes the 'did I buy the top?' problem by spreading purchases across time and averaging your cost basis.
+                </div>
+                <ul class="strat-tips"><li>Set a recurring calendar reminder — discipline beats market-timing.</li><li>Track your average cost basis after each tranche.</li><li>Pause if price falls below $185.21 (200-SMA) and re-assess.</li></ul>
+              </div>
+              <div class="strategy-box">
+                <div class="strat-name">🔀 ETF Rotation — Swap LRCX Risk for SOXX</div>
+                <div class="strat-action"><strong>Action:</strong> Instead of (or alongside) single-stock LRCX, buy $10,000 of SOXX via lump-sum or DCA.</div>
+                <div class="strat-action" style="margin-top:4px;">
+                  <strong>Why:</strong> Reduces single-name concentration risk while maintaining full sector exposure. SOXX holds 25-30 semiconductor names — one earnings miss won't crater the position.
+                </div>
+                <ul class="strat-tips"><li>SMH: more NVDA-heavy (higher AI beta). SOXX: more balanced (10% cap).</li><li>SOXL is 3× leveraged — only for very short-term tactical traders.</li><li>ETFs work well as DCA vehicles with automatic investment plans.</li></ul>
+              </div>
+      </div>
+      <div class="ticker-card">
+        <h3>ON — ON Semiconductor Corpora &nbsp; <span class='chip chip-yellow'>65</span></h3>
+        <div class="ticker-grid">
+          <div class="ticker-item">
+            <span class="lbl">Price: </span>
+            <span class="val">$106.02</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Trend: </span>
+            <span class="val">Strong Uptrend ▲▲</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">RSI: </span>
+            <span class="val">59.5
+              ✓
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">ADX: </span>
+            <span class="val">41.0
+              (Strong)
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">MACD: </span>
+            <span class="val">-0.6079
+              ↓
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">BB%: </span>
+            <span class="val">60%</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Fwd P/E: </span>
+            <span class="val">24.9x</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">PEG: </span>
+            <span class="val">0.36x</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Market Cap: </span>
+            <span class="val">$41B</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Analyst Target: </span>
+            <span class="val">$103.62 (-2%)</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">1M / 3M Return: </span>
+            <span class="val">
+              <span class='ret-pos'>+23.9%</span> / <span class='ret-pos'>+50.0%</span>
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Max Drawdown: </span>
+            <span class="val">-28.1%</span>
+          </div>
+        </div>
+        <div style="margin-top:12px;font-size:12px;color:#64748b;">
+          <strong>Score breakdown:</strong>
+          RSI: 12 | BB: 8 | SMA50: 20 | MACD: 0 | ADX: 15 | GoldenX: 5 | Stoch: 5
+        </div>
+        
+              <div class="strategy-box">
+                <div class="strat-name">📅 Dollar-Cost Averaging (Weekly, 8 periods)</div>
+                <div class="strat-action"><strong>Action:</strong> Invest $1,250 in ON every weekly for 8 periods. Total: $10,000.</div>
+                <div class="strat-action" style="margin-top:4px;">
+                  <strong>Why:</strong> Sector up +50% in 3 months — timing risk is real. DCA removes the 'did I buy the top?' problem by spreading purchases across time and averaging your cost basis.
+                </div>
+                <ul class="strat-tips"><li>Set a recurring calendar reminder — discipline beats market-timing.</li><li>Track your average cost basis after each tranche.</li><li>Pause if price falls below $61.10 (200-SMA) and re-assess.</li></ul>
+              </div>
+              <div class="strategy-box">
+                <div class="strat-name">⏳ Pullback Buy — GTC Limit Order</div>
+                <div class="strat-action"><strong>Action:</strong> Set a Good-Till-Cancelled limit buy for ON at $98.60 (7.5% below today). Target: $115.68. Stop: $97.49.</div>
+                <div class="strat-action" style="margin-top:4px;">
+                  <strong>Why:</strong> RSI 59 and +50% 3-month gain suggest extended conditions. Waiting for a pullback to $98.60 (50-SMA / −7%) improves entry R/R.
+                </div>
+                <ul class="strat-tips"><li>Primary limit zone: $80.65 (50-day SMA — natural support).</li><li>Deeper limit: $89.47 (lower Bollinger Band).</li><li>Cancel if earnings or guidance materially change the thesis.</li></ul>
+              </div>
+      </div>
+      <div class="ticker-card">
+        <h3>SOXX — iShares PHLX SOX Semicon &nbsp; <span class='chip chip-yellow'>65</span></h3>
+        <div class="ticker-grid">
+          <div class="ticker-item">
+            <span class="lbl">Price: </span>
+            <span class="val">$496.74</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Trend: </span>
+            <span class="val">Strong Uptrend ▲▲</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">RSI: </span>
+            <span class="val">60.2
+              ✓
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">ADX: </span>
+            <span class="val">40.3
+              (Strong)
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">MACD: </span>
+            <span class="val">-3.2472
+              ↓
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">BB%: </span>
+            <span class="val">60%</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Fwd P/E: </span>
+            <span class="val">N/A</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">PEG: </span>
+            <span class="val">N/A</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Market Cap: </span>
+            <span class="val">N/A</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Analyst Target: </span>
+            <span class="val">N/A</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">1M / 3M Return: </span>
+            <span class="val">
+              <span class='ret-pos'>+19.0%</span> / <span class='ret-pos'>+38.9%</span>
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Max Drawdown: </span>
+            <span class="val">-15.8%</span>
+          </div>
+        </div>
+        <div style="margin-top:12px;font-size:12px;color:#64748b;">
+          <strong>Score breakdown:</strong>
+          RSI: 12 | BB: 8 | SMA50: 20 | MACD: 0 | ADX: 15 | GoldenX: 5 | Stoch: 5
+        </div>
+        
+              <div class="strategy-box">
+                <div class="strat-name">📅 Dollar-Cost Averaging (Weekly, 8 periods)</div>
+                <div class="strat-action"><strong>Action:</strong> Invest $1,250 in SOXX every weekly for 8 periods. Total: $10,000.</div>
+                <div class="strat-action" style="margin-top:4px;">
+                  <strong>Why:</strong> Sector up +39% in 3 months — timing risk is real. DCA removes the 'did I buy the top?' problem by spreading purchases across time and averaging your cost basis.
+                </div>
+                <ul class="strat-tips"><li>Set a recurring calendar reminder — discipline beats market-timing.</li><li>Track your average cost basis after each tranche.</li><li>Pause if price falls below $325.06 (200-SMA) and re-assess.</li></ul>
+              </div>
+              <div class="strategy-box">
+                <div class="strat-name">⏳ Pullback Buy — GTC Limit Order</div>
+                <div class="strat-action"><strong>Action:</strong> Set a Good-Till-Cancelled limit buy for SOXX at $461.97 (7.5% below today). Target: $525.51. Stop: $468.47.</div>
+                <div class="strat-action" style="margin-top:4px;">
+                  <strong>Why:</strong> RSI 60 and +39% 3-month gain suggest extended conditions. Waiting for a pullback to $461.97 (50-SMA / −7%) improves entry R/R.
+                </div>
+                <ul class="strat-tips"><li>Primary limit zone: $407.69 (50-day SMA — natural support).</li><li>Deeper limit: $419.53 (lower Bollinger Band).</li><li>Cancel if earnings or guidance materially change the thesis.</li></ul>
+              </div>
+      </div>
+      <div class="ticker-card">
+        <h3>AMD — Advanced Micro Devices,  &nbsp; <span class='chip chip-yellow'>64</span></h3>
+        <div class="ticker-grid">
+          <div class="ticker-item">
+            <span class="lbl">Price: </span>
+            <span class="val">$414.05</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Trend: </span>
+            <span class="val">Strong Uptrend ▲▲</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">RSI: </span>
+            <span class="val">63.8
+              ✓
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">ADX: </span>
+            <span class="val">49.8
+              (Strong)
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">MACD: </span>
+            <span class="val">-2.2842
+              ↓
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">BB%: </span>
+            <span class="val">64%</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Fwd P/E: </span>
+            <span class="val">32.0x</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">PEG: </span>
+            <span class="val">1.01x</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Market Cap: </span>
+            <span class="val">$675B</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Analyst Target: </span>
+            <span class="val">$460.79 (+11%)</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">1M / 3M Return: </span>
+            <span class="val">
+              <span class='ret-pos'>+50.6%</span> / <span class='ret-pos'>+106.9%</span>
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Max Drawdown: </span>
+            <span class="val">-27.8%</span>
+          </div>
+        </div>
+        <div style="margin-top:12px;font-size:12px;color:#64748b;">
+          <strong>Score breakdown:</strong>
+          RSI: 12 | BB: 7 | SMA50: 20 | MACD: 0 | ADX: 15 | GoldenX: 5 | Stoch: 5
+        </div>
+        
+              <div class="strategy-box">
+                <div class="strat-name">📅 Dollar-Cost Averaging (Weekly, 8 periods)</div>
+                <div class="strat-action"><strong>Action:</strong> Invest $1,250 in AMD every weekly for 8 periods. Total: $10,000.</div>
+                <div class="strat-action" style="margin-top:4px;">
+                  <strong>Why:</strong> Sector up +107% in 3 months — timing risk is real. DCA removes the 'did I buy the top?' problem by spreading purchases across time and averaging your cost basis.
+                </div>
+                <ul class="strat-tips"><li>Set a recurring calendar reminder — discipline beats market-timing.</li><li>Track your average cost basis after each tranche.</li><li>Pause if price falls below $226.62 (200-SMA) and re-assess.</li></ul>
+              </div>
+              <div class="strategy-box">
+                <div class="strat-name">⏳ Pullback Buy — GTC Limit Order</div>
+                <div class="strat-action"><strong>Action:</strong> Set a Good-Till-Cancelled limit buy for AMD at $385.07 (7.5% below today). Target: $456.42. Stop: $377.53.</div>
+                <div class="strat-action" style="margin-top:4px;">
+                  <strong>Why:</strong> RSI 64 and +107% 3-month gain suggest extended conditions. Waiting for a pullback to $385.07 (50-SMA / −7%) improves entry R/R.
+                </div>
+                <ul class="strat-tips"><li>Primary limit zone: $288.01 (50-day SMA — natural support).</li><li>Deeper limit: $280.52 (lower Bollinger Band).</li><li>Cancel if earnings or guidance materially change the thesis.</li></ul>
+              </div>
+      </div>
+      <div class="ticker-card">
+        <h3>SMH — VanEck Semiconductor ETF &nbsp; <span class='chip chip-yellow'>64</span></h3>
+        <div class="ticker-grid">
+          <div class="ticker-item">
+            <span class="lbl">Price: </span>
+            <span class="val">$543.96</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Trend: </span>
+            <span class="val">Strong Uptrend ▲▲</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">RSI: </span>
+            <span class="val">60.9
+              ✓
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">ADX: </span>
+            <span class="val">37.4
+              (Strong)
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">MACD: </span>
+            <span class="val">-2.5564
+              ↓
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">BB%: </span>
+            <span class="val">61%</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Fwd P/E: </span>
+            <span class="val">N/A</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">PEG: </span>
+            <span class="val">N/A</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Market Cap: </span>
+            <span class="val">N/A</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Analyst Target: </span>
+            <span class="val">N/A</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">1M / 3M Return: </span>
+            <span class="val">
+              <span class='ret-pos'>+17.2%</span> / <span class='ret-pos'>+31.9%</span>
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Max Drawdown: </span>
+            <span class="val">-14.9%</span>
+          </div>
+        </div>
+        <div style="margin-top:12px;font-size:12px;color:#64748b;">
+          <strong>Score breakdown:</strong>
+          RSI: 12 | BB: 7 | SMA50: 20 | MACD: 0 | ADX: 15 | GoldenX: 5 | Stoch: 5
+        </div>
+        
+              <div class="strategy-box">
+                <div class="strat-name">📅 Dollar-Cost Averaging (Weekly, 8 periods)</div>
+                <div class="strat-action"><strong>Action:</strong> Invest $1,250 in SMH every weekly for 8 periods. Total: $10,000.</div>
+                <div class="strat-action" style="margin-top:4px;">
+                  <strong>Why:</strong> Sector up +32% in 3 months — timing risk is real. DCA removes the 'did I buy the top?' problem by spreading purchases across time and averaging your cost basis.
+                </div>
+                <ul class="strat-tips"><li>Set a recurring calendar reminder — discipline beats market-timing.</li><li>Track your average cost basis after each tranche.</li><li>Pause if price falls below $377.94 (200-SMA) and re-assess.</li></ul>
+              </div>
+              <div class="strategy-box">
+                <div class="strat-name">⏳ Pullback Buy — GTC Limit Order</div>
+                <div class="strat-action"><strong>Action:</strong> Set a Good-Till-Cancelled limit buy for SMH at $505.88 (7.5% below today). Target: $570.69. Stop: $516.61.</div>
+                <div class="strat-action" style="margin-top:4px;">
+                  <strong>Why:</strong> RSI 61 and +32% 3-month gain suggest extended conditions. Waiting for a pullback to $505.88 (50-SMA / −7%) improves entry R/R.
+                </div>
+                <ul class="strat-tips"><li>Primary limit zone: $457.79 (50-day SMA — natural support).</li><li>Deeper limit: $465.98 (lower Bollinger Band).</li><li>Cancel if earnings or guidance materially change the thesis.</li></ul>
+              </div>
+      </div>
+      <div class="ticker-card">
+        <h3>MRVL — Marvell Technology, Inc. &nbsp; <span class='chip chip-yellow'>60</span></h3>
+        <div class="ticker-grid">
+          <div class="ticker-item">
+            <span class="lbl">Price: </span>
+            <span class="val">$176.27</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Trend: </span>
+            <span class="val">Strong Uptrend ▲▲</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">RSI: </span>
+            <span class="val">62.9
+              ✓
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">ADX: </span>
+            <span class="val">45.4
+              (Strong)
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">MACD: </span>
+            <span class="val">-1.3633
+              ↓
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">BB%: </span>
+            <span class="val">81%</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Fwd P/E: </span>
+            <span class="val">32.5x</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">PEG: </span>
+            <span class="val">1.98x</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Market Cap: </span>
+            <span class="val">$154B</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Analyst Target: </span>
+            <span class="val">$141.41 (-20%)</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">1M / 3M Return: </span>
+            <span class="val">
+              <span class='ret-pos'>+19.2%</span> / <span class='ret-pos'>+123.0%</span>
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Max Drawdown: </span>
+            <span class="val">-26.4%</span>
+          </div>
+        </div>
+        <div style="margin-top:12px;font-size:12px;color:#64748b;">
+          <strong>Score breakdown:</strong>
+          RSI: 12 | BB: 3 | SMA50: 20 | MACD: 0 | ADX: 15 | GoldenX: 5 | Stoch: 5
+        </div>
+        
+              <div class="strategy-box">
+                <div class="strat-name">📅 Dollar-Cost Averaging (Weekly, 8 periods)</div>
+                <div class="strat-action"><strong>Action:</strong> Invest $1,250 in MRVL every weekly for 8 periods. Total: $10,000.</div>
+                <div class="strat-action" style="margin-top:4px;">
+                  <strong>Why:</strong> Sector up +123% in 3 months — timing risk is real. DCA removes the 'did I buy the top?' problem by spreading purchases across time and averaging your cost basis.
+                </div>
+                <ul class="strat-tips"><li>Set a recurring calendar reminder — discipline beats market-timing.</li><li>Track your average cost basis after each tranche.</li><li>Pause if price falls below $94.10 (200-SMA) and re-assess.</li></ul>
+              </div>
+              <div class="strategy-box">
+                <div class="strat-name">⏳ Pullback Buy — GTC Limit Order</div>
+                <div class="strat-action"><strong>Action:</strong> Set a Good-Till-Cancelled limit buy for MRVL at $163.93 (7.5% below today). Target: $182.15. Stop: $159.63.</div>
+                <div class="strat-action" style="margin-top:4px;">
+                  <strong>Why:</strong> RSI 63 and +123% 3-month gain suggest extended conditions. Waiting for a pullback to $163.93 (50-SMA / −7%) improves entry R/R.
+                </div>
+                <ul class="strat-tips"><li>Primary limit zone: $131.43 (50-day SMA — natural support).</li><li>Deeper limit: $151.69 (lower Bollinger Band).</li><li>Cancel if earnings or guidance materially change the thesis.</li></ul>
+              </div>
+      </div>
+      <div class="ticker-card">
+        <h3>QCOM — QUALCOMM Incorporated &nbsp; <span class='chip chip-yellow'>59</span></h3>
+        <div class="ticker-grid">
+          <div class="ticker-item">
+            <span class="lbl">Price: </span>
+            <span class="val">$195.61</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Trend: </span>
+            <span class="val">Uptrend ▲</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">RSI: </span>
+            <span class="val">58.4
+              ✓
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">ADX: </span>
+            <span class="val">41.6
+              (Strong)
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">MACD: </span>
+            <span class="val">-0.4610
+              ↓
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">BB%: </span>
+            <span class="val">61%</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Fwd P/E: </span>
+            <span class="val">18.4x</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">PEG: </span>
+            <span class="val">0.87x</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Market Cap: </span>
+            <span class="val">$206B</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Analyst Target: </span>
+            <span class="val">$177.58 (-9%)</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">1M / 3M Return: </span>
+            <span class="val">
+              <span class='ret-pos'>+42.2%</span> / <span class='ret-pos'>+37.4%</span>
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Max Drawdown: </span>
+            <span class="val">-33.1%</span>
+          </div>
+        </div>
+        <div style="margin-top:12px;font-size:12px;color:#64748b;">
+          <strong>Score breakdown:</strong>
+          RSI: 12 | BB: 7 | SMA50: 20 | MACD: 0 | ADX: 15 | Stoch: 5
+        </div>
+        
+              <div class="strategy-box">
+                <div class="strat-name">📅 Dollar-Cost Averaging (Weekly, 8 periods)</div>
+                <div class="strat-action"><strong>Action:</strong> Invest $1,250 in QCOM every weekly for 8 periods. Total: $10,000.</div>
+                <div class="strat-action" style="margin-top:4px;">
+                  <strong>Why:</strong> Sector up +37% in 3 months — timing risk is real. DCA removes the 'did I buy the top?' problem by spreading purchases across time and averaging your cost basis.
+                </div>
+                <ul class="strat-tips"><li>Set a recurring calendar reminder — discipline beats market-timing.</li><li>Track your average cost basis after each tranche.</li><li>Pause if price falls below $158.27 (200-SMA) and re-assess.</li></ul>
+              </div>
+              <div class="strategy-box">
+                <div class="strat-name">⏳ Pullback Buy — GTC Limit Order</div>
+                <div class="strat-action"><strong>Action:</strong> Set a Good-Till-Cancelled limit buy for QCOM at $181.92 (7.5% below today). Target: $223.88. Stop: $174.36.</div>
+                <div class="strat-action" style="margin-top:4px;">
+                  <strong>Why:</strong> RSI 58 and +37% 3-month gain suggest extended conditions. Waiting for a pullback to $181.92 (50-SMA / −7%) improves entry R/R.
+                </div>
+                <ul class="strat-tips"><li>Primary limit zone: $151.49 (50-day SMA — natural support).</li><li>Deeper limit: $125.58 (lower Bollinger Band).</li><li>Cancel if earnings or guidance materially change the thesis.</li></ul>
+              </div>
+      </div>
+      <div class="ticker-card">
+        <h3>TXN — Texas Instruments Incorp &nbsp; <span class='chip chip-red'>44</span></h3>
+        <div class="ticker-grid">
+          <div class="ticker-item">
+            <span class="lbl">Price: </span>
+            <span class="val">$302.31</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Trend: </span>
+            <span class="val">Strong Uptrend ▲▲</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">RSI: </span>
+            <span class="val">73.3
+              ⚠
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">ADX: </span>
+            <span class="val">56.8
+              (Strong)
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">MACD: </span>
+            <span class="val">-0.4806
+              ↓
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">BB%: </span>
+            <span class="val">76%</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Fwd P/E: </span>
+            <span class="val">32.1x</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">PEG: </span>
+            <span class="val">1.44x</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Market Cap: </span>
+            <span class="val">$275B</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Analyst Target: </span>
+            <span class="val">$283.94 (-6%)</span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">1M / 3M Return: </span>
+            <span class="val">
+              <span class='ret-pos'>+30.0%</span> / <span class='ret-pos'>+36.1%</span>
+            </span>
+          </div>
+          <div class="ticker-item">
+            <span class="lbl">Max Drawdown: </span>
+            <span class="val">-29.6%</span>
+          </div>
+        </div>
+        <div style="margin-top:12px;font-size:12px;color:#64748b;">
+          <strong>Score breakdown:</strong>
+          RSI: 0 | BB: 4 | SMA50: 20 | MACD: 0 | ADX: 15 | GoldenX: 5
+        </div>
+        
+              <div class="strategy-box">
+                <div class="strat-name">⏳ Pullback Buy — GTC Limit Order</div>
+                <div class="strat-action"><strong>Action:</strong> Set a Good-Till-Cancelled limit buy for TXN at $281.15 (7.5% below today). Target: $307.64. Stop: $287.30.</div>
+                <div class="strat-action" style="margin-top:4px;">
+                  <strong>Why:</strong> RSI 73 and +36% 3-month gain suggest extended conditions. Waiting for a pullback to $281.15 (50-SMA / −7%) improves entry R/R.
+                </div>
+                <ul class="strat-tips"><li>Primary limit zone: $234.65 (50-day SMA — natural support).</li><li>Deeper limit: $250.08 (lower Bollinger Band).</li><li>Cancel if earnings or guidance materially change the thesis.</li></ul>
+              </div>
+              <div class="strategy-box">
+                <div class="strat-name">🔀 ETF Rotation — Swap TXN Risk for SMH</div>
+                <div class="strat-action"><strong>Action:</strong> Instead of (or alongside) single-stock TXN, buy $10,000 of SMH via lump-sum or DCA.</div>
+                <div class="strat-action" style="margin-top:4px;">
+                  <strong>Why:</strong> Reduces single-name concentration risk while maintaining full sector exposure. SMH holds 25-30 semiconductor names — one earnings miss won't crater the position.
+                </div>
+                <ul class="strat-tips"><li>SMH: more NVDA-heavy (higher AI beta). SOXX: more balanced (10% cap).</li><li>SOXL is 3× leveraged — only for very short-term tactical traders.</li><li>ETFs work well as DCA vehicles with automatic investment plans.</li></ul>
+              </div>
+      </div>
+  </div>
+
+  <!-- SECTION 4: BACKTEST RESULTS -->
+  
+
+  <!-- SECTION 5: WEIGHT OPTIMIZATION -->
+  
+
+  <!-- FOOTER / DISCLAIMER -->
+  <div class="footer">
+    <p><strong>⚠️ Disclaimer:</strong> This report is generated by NaYa Fintech's
+    automated semiconductor sector analyzer for <em>educational and research purposes only</em>.
+    It does NOT constitute financial advice. All analysis is based on technical indicators
+    and historical data. Past performance does not guarantee future results.
+    Please consult a licensed financial advisor before making any investment decisions.</p>
+    <p style="margin-top:8px;">
+      Code developed with assistance from
+      <a href="https://www.anthropic.com/claude" style="color:#6366f1;">Claude AI</a>
+      by Anthropic &nbsp;|&nbsp;
+      <a href="https://github.com/ybhambha/NaYa_Fintech"
+         style="color:#6366f1;">github.com/ybhambha/NaYa_Fintech</a>
+    </p>
+  </div>
+
+</div>
+</body>
+</html>

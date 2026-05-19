@@ -31,6 +31,11 @@ Code in this repository was developed with the assistance of
 [Claude](https://www.anthropic.com/claude) by Anthropic.
 Claude was used for architecture design, code generation, testing, and documentation.
 All outputs were reviewed and validated by the NaYa Fintech team.
+
+## 📊 Live Daily Reports
+Automated daily semiconductor sector analysis generated at 5:30 PM every weekday.
+
+[View Latest Report](https://ybhambha.github.io/NaYa_Fintech/projects/semisector/reports/report_2026-05-19.html)
   
 ## 📬 Connect With Us
 - [LinkedIn](https://www.linkedin.com/in/yashwant-bhambhani-cfa-frm-6a564a/)
