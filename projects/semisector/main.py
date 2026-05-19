@@ -276,8 +276,15 @@ def main() -> None:
         # Also save HTML preview to disk for GitHub upload
         html_path = PROJECT_ROOT / "reports" / \
             f"report_{__import__('datetime').date.today()}.html"
+	html_path = PROJECT_ROOT / "reports" / \
+    	    f"report_{__import__('datetime').date.today()}.html"
+	    latest_path = PROJECT_ROOT / "reports" / "latest_report.html"
         html_path.parent.mkdir(exist_ok=True)
         with open(html_path, "w", encoding="utf-8") as f:
+            f.write(reporter.preview_html(results, bt_report, opt_result))
+	with open(html_path, "w", encoding="utf-8") as f:
+    	    f.write(reporter.preview_html(results, bt_report, opt_result))
+	with open(latest_path, "w", encoding="utf-8") as f:
             f.write(reporter.preview_html(results, bt_report, opt_result))
         print(C.dim(f"  📄 HTML report saved: {html_path}"))
 
