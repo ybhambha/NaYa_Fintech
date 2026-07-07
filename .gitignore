@@ -4,3 +4,10 @@
 __pycache__\ 
 .venv\ 
 *.pyc 
+node_modules/ 
+*.log 
+*.pem 
+*.key 
+*.crt
+*.zip 
+.spyproject/
