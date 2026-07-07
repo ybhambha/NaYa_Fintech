@@ -1,0 +1,24 @@
+# Azure App Service build manifest for the CSR Co-Pilot deploy.
+#
+# The deployed serve.py (static HTTPS/HTTP server) imports ONLY the Python
+# standard library -- http.server, ssl, os, subprocess, sys -- so nothing
+# below is strictly required just to serve the app. This file's main job is
+# to signal to Azure's Oryx build that this is a Python project.
+#
+# 'anthropic' is included so the optional server-side Claude proxy endpoint
+# (the secure way to do document extraction without exposing a key in the
+# browser) works the moment you add it -- no second dependency change needed.
+# It's a lightweight pure-Python package and harmless if left unused.
+anthropic>=0.25.0
+
+# Deliberately NOT included:
+#
+#   cryptography   -- used ONLY for local self-signed cert generation in
+#                     serve.py, which is gated behind the IS_AZURE check and
+#                     never runs in the cloud. It already lives in your local
+#                     csr_voice_agent conda env, so local runs are unaffected.
+#
+#   faster-whisper -- too heavy for the F1 tier (RAM + CPU caps) and disabled
+#                     there. Add it here (and set the WHISPER_MODEL and
+#                     HF_HOME app settings) when you move to a B1 plan for
+#                     real local-Whisper transcription.
